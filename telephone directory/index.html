@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telephone Directory & Billing System</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>Telephone Directory & Billing System</header>
+
+  <div class="container">
+    <h2>Add Customer</h2>
+    <form id="customerForm">
+      <input type="text" id="name" placeholder="Customer Name" required>
+      <input type="text" id="phone" placeholder="Phone Number" required>
+      <input type="text" id="address" placeholder="Address" required>
+      <input type="number" id="duration" placeholder="Call Duration (in minutes)" required>
+      <button type="submit">Add Customer</button>
+    </form>
+
+    <input type="text" id="search" placeholder="Search by name or number...">
+
+    <table id="directoryTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Phone</th>
+          <th>Address</th>
+          <th>Duration</th>
+          <th>Bill (₹)</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <!-- Link to JS -->
+  <script src="script.js"></script>
+</body>
+</html>
